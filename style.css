@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  /*   height: ; */
+    background-color: #be3144;
+  }
+  
+  nav ul{
+    display: flex;
+  }
+  
+  nav ul li{
+    list-style: none;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  nav ul li:hover{
+    background-color: #45567d;
+  }
+  
+  nav ul li a{
+    display: block;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  #welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #welcome-section h1{
+    font-size: 70px;
+    color: #f0f0f0;
+  }
+  
+  #welcome-section p{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+    color: #be3144;
+  }
+  
+  #projects{
+    background-color: #45567d;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  #projects h2{
+    font-size: 40px;
+    color: #f0f0f0;
+    width: 650px;
+    border-bottom: 2px solid #f0f0f0;
+    margin: auto auto 50px;
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+  
+  .container div {
+    width: 33%;
+    background: #303841;
+  }
+  
+  .container div a{
+    text-decoration: none;
+  }
+  
+  .container div img{
+    width: 100%;
+  }
+  
+  .container div p{
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px;
+  }
+  
+  .container div p:hover:before{
+    content: "< ";
+    color: orange;
+    font-weight: 100;
+  }
+  
+  .container div p:hover:after{
+    content: " />";
+    color: orange;
+    font-weight: 100;
+  }
+  
+  #contacts{
+    background-color: #303841;
+    text-align: center;
+  /*   height: 60vh; */
+    padding: 80px 0;
+  }
+  
+  #contacts h2{
+    color: #f0f0f0;
+    font-size: 50px;
+  }
+  
+  .contact-links{
+    display: flex;
+    max-width: 50%;
+    margin: auto;
+    padding-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact-links a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 28px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+  }
+  
+  .contact-links a:hover{
+    position: relative;
+    top: 10px;
+  }
+  
+  @media(max-width:900px){
+    h1{
+      font-size: 65px;
+    }
+  }
